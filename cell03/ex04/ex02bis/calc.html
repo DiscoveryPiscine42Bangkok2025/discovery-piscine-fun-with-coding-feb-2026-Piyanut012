@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>It's over 9000</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </head>
+    <body>
+
+        <input type="text" id="left">
+        
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+
+        <input type="text" id="right">
+        
+        <input type="submit" value="Try me!" id="btn-calc">
+
+        <script>
+            setInterval(function() {
+                alert("Please, use me...");
+            }, 30000);
+
+            // คำนวณ
+            $('#btn-calc').click(function() {
+                let leftStr = $('#left').val();
+                let rightStr = $('#right').val();
+                let op = $('#operator').val();
+
+                // \d+ คือตัวเลข 0-9
+                if (!/^\d+$/.test(leftStr) || !/^\d+$/.test(rightStr)) {
+                    alert("Error :(");
+                    return;
+                }
+
+                let l = parseInt(leftStr);
+                let r = parseInt(rightStr);
+                let result;
+
+                // หารด้วย 0
+                if ((op === '/' || op === '%') && r === 0) {
+                    console.log("It's over 9000!");
+                    alert("It's over 9000!");
+                    return;
+                }
+
+                // คำนวณ
+                if (op === '+') result = l + r;
+                else if (op === '-') result = l - r;
+                else if (op === '*') result = l * r;
+                else if (op === '/') result = l / r;
+                else if (op === '%') result = l % r;
+
+                console.log(result);
+                alert(result);
+            });
+        </script>
+
+    </body>
+</html>

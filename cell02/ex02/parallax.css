@@ -1,0 +1,44 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.parallax {
+    min-height: 100vh; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-1 {
+    background-image: url('https://static.thairath.co.th/media/dFQROr7oWzulq5Fa5LJPy5B4qNdayFGtRrSsdJInLYWvwGnX9BVjkAUMd0O7l7CLSTW.jpg');
+}
+
+.image-2 {
+    background-image: url('https://f.ptcdn.info/078/076/000/r5tzwel2nq8YmxZm3w6-o.png');
+}
+
+.message-box {
+    color: #fff;
+    padding: 20px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    border-radius: 10px;
+}
+
+.black-block {
+    height: 400px;
+    background-color: #000000;
+    color: #fff;
+    font-size: 30px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}

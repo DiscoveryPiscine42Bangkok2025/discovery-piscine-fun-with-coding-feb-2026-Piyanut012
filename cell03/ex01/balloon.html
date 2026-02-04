@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Balloon</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+
+            #balloon {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="balloon" onclick="increase()" onmouseleave="deincrease()"></div>
+
+        <script>
+            var size = 200;
+            var colors = ['red', 'green', 'blue'];
+            var index = 0;
+            var balloon = document.getElementById('balloon');
+
+            function increase() {
+                size += 10;
+                index++;
+
+                if (index > 2) {
+                    index = 0;
+                }
+
+                if (size > 420) {
+                    size = 200;
+                    index = 0;
+                }
+
+                update();
+            }
+
+            function deincrease() {
+                if (size > 200) {
+                    size -= 5;
+                    
+                    index--;
+                    if (index < 0) {
+                        index = 2;
+                    }
+                }
+
+                update();
+            }
+
+            function update() {
+                balloon.style.width = size + 'px';
+                balloon.style.height = size + 'px';
+                balloon.style.backgroundColor = colors[index];
+            }
+        </script>
+
+    </body>
+</html>
