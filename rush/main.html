@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in-up {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-[#25303F] flex flex-col items-center justify-center px-4">
+
+  <div class="flex flex-col items-center w-full">
+
+    <h2 class="text-white text-3xl md:text-4xl font-bold mb-2 text-center">
+      Select who you want to see?
+    </h2>
+    <h2 class="text-gray-400 text-3xl md:text-4xl font-bold mb-8 md:mb-12 text-center">
+      Pick one who you prefer!
+    </h2>
+
+    <div class="flex flex-col md:flex-row gap-8 md:gap-20">
+
+      <a href="index1.html" class="block animate-fade-in-up relative w-80 h-fit rounded-lg overflow-hidden p-[2px] cursor-pointer 
+                  hover:scale-110 hover:shadow-[0_0_30px_rgba(34,231,161,0.4)] transition-all duration-500 group no-underline">
+        <div class="absolute inset-[-50%] bg-[conic-gradient(transparent_270deg,#22E7A1)] animate-[spin_4s_linear_infinite]"></div>
+        
+        <div class="relative bg-[#293443] h-full rounded-lg flex flex-col items-center p-4">
+          <div class="w-full h-48 rounded mb-4 overflow-hidden">
+            <img src="assets/img/aumidus.png" class="w-full h-full object-cover object-top rounded" alt="Piyanut" />
+          </div>
+          <h2 class="text-white text-xl font-semibold mb-1">Piyanut Rotchroensap</h2>
+          <h3 class="text-gray-400 text-lg font-semibold mb-5 text-center">
+            "8 กุมภากาเห็นชอบ"
+          </h3>
+          
+          <div class="flex gap-4 justify-center mt-auto z-10 relative">
+            <object class="flex gap-4">
+                <a href="https://www.facebook.com/piyanut.rotchroensap" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#394759] text-white hover:scale-110 hover:bg-[#22E7A1] transition">
+                <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/piya_aum/" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#394759] text-white hover:scale-110 hover:bg-[#22E7A1] transition">
+                <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/DiscoveryPiscine42Bangkok2025/discovery-piscine-fun-with-coding-feb-2026-Piyanut012" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#394759] text-white hover:scale-110 hover:bg-[#22E7A1] transition">
+                <i class="fab fa-github"></i>
+                </a>
+            </object>
+          </div>
+        </div>
+      </a>
+
+      <a href="index2.html" class="block animate-fade-in-up relative w-80 h-fit rounded-lg overflow-hidden p-[2px] cursor-pointer 
+                  hover:scale-110 hover:shadow-[0_0_30px_rgba(34,231,161,0.4)] transition-all duration-500 group no-underline">
+        <div class="absolute inset-[-50%] bg-[conic-gradient(transparent_270deg,#22E7A1)] animate-[spin_4s_linear_infinite]"></div>
+        
+        <div class="relative bg-[#293443] h-full rounded-lg flex flex-col items-center p-4">
+          <div class="w-full h-48 rounded mb-4 overflow-hidden">
+            <img src="assets/img/minxd.png" class="w-full h-full object-cover object-top rounded" alt="Mathas" />
+          </div>
+          <h2 class="text-white text-xl font-semibold mb-1">Mathas Phumphuang</h2>
+          <h3 class="text-gray-400 text-lg font-semibold mb-5 text-center">
+            "ความรู้แพ้ประสบการณ์"
+          </h3>
+
+          <div class="flex gap-4 justify-center mt-auto z-10 relative">
+            <object class="flex gap-4">
+                <a href="https://www.facebook.com/mathas.min.3/" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#394759] text-white hover:scale-110 hover:bg-[#22E7A1] transition">
+                <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/armin3047._/" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#394759] text-white hover:scale-110 hover:bg-[#22E7A1] transition">
+                <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/DiscoveryPiscine42Bangkok2025/discovery-piscine-fun-with-coding-feb-2026-mathasphumphuang" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-[#394759] text-white hover:scale-110 hover:bg-[#22E7A1] transition">
+                <i class="fab fa-github"></i>
+                </a>
+            </object>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
